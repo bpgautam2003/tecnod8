@@ -1,38 +1,228 @@
-.App {
+/* Navbar css */
+
+.nav{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--black);
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  height: 4.8rem;
+}
+
+.nav-container{
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.nav-container img{
+  max-width: 2.8rem;
+  max-height: 2.8rem;
+}
+
+.nav-list{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  border: 1px solid var(--gray);
+  padding: 12px 20px;
+  border-radius: 10px;  
+  margin: 0 1rem ;
+}
+
+.nav-list a{
+ text-decoration: none;
+ color: white;
+}
+
+.nav-list a:hover{
+  color: var(--main);
+  border-bottom: 1.5px solid var(--main);
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  width: 2.8rem;
+  height: 2.8rem;
+  align-items: center;
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .nav{
+    height: 4rem;
+  }
+  .nav-list {
+    display: none;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+  }
+  .nav-container{
+    width: 95%;
+    justify-content: space-between;
+  }
+  .nav-container img{
+  max-width: 2.4rem;
+  max-height: 2.4rem;
+}
+
+  .nav-responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    background-color: black;
+    border-top: 1px solid var(--gray);
+    
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+
+/* Home css */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  color: var(--main);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background: transparent;
+  align-items: center;
+  max-width: 80%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-content h1 {
+  font-family: var(--text-font);
+  font-size: 6.4rem;
+  font-weight: 500;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.hero-btn-grp {
+  display: flex;
+  gap: 1rem;
+  margin-top: 15px;
+}
+
+.hero-btn-grp button {
+  height: 2.4rem;
+  max-width: 8rem;
+  padding: 5px 15px;
+  color: var(--main);
+  background: transparent;
+  border: 1px solid var(--main);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.hero-btn-grp button:hover {
+  background-color: var(--main);
+  color: var(--bg);
+  transform: scale(1.1);
+  font-weight: 500;
+  transition: all ease-in 0.3s;
+}
+
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 5.2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 980px) {
+  .hero-content h1 {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 444px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-btn-grp button{
+    height: 2rem;
+    font-size: small;
+    padding: 5px;
+  }
+}
+
+/* About css*/
+
+.about-container{
+  width: 100%;
+  position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  background-color: var(--bg);
+  padding: 2rem 0;
+  padding-left: 4rem; 
 }
 
-.App-link {
-  color: #61dafb;
+.about-container p{
+  font-family: var(--text-font);
+  font-size: 3.6rem;
+  line-height: 4.8rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about-container span{
+  color: var(--main);
+}
+@media (max-width : 1024px){
+  .about-container p{
+    font-size: 2.8rem;
+    line-height: 3.6rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width : 840px) {
+  .about-container p {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+}
+
+@media (max-width : 767px) {
+  .about-container{
+    padding-left: 2rem;
+  }
+  .about-container p {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}
+
+@media (max-width : 560px) {
+  .about-container {
+    padding-left: 10px;
+  }
+
+  .about-container p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 }
