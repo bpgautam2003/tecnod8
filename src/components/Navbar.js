@@ -21,26 +21,26 @@ const Navbar = () => {
                 </div>
                 <ul className={`nav-list ${menuOpen ? 'nav-responsive' : ''}`}>
                     <li>
-                        <a href="/#">Home</a>
+                        <a href="#" onClick={toggleMenu}>Home</a>
                     </li>
                     <li>
-                        <a href="/#deliverables">Deliverables</a>
-                    </li>
-                    <li>
-                        
-                        <a href="/#benefits">Benefits</a>
+                        <a href="#deliverables" onClick={toggleMenu}>Deliverables</a>
                     </li>
                     <li>
                         
-                        <a href="/#products">Products</a>
+                        <a href="#benefits" onClick={toggleMenu}>Benefits</a>
                     </li>
                     <li>
                         
-                        <a href="/#team">Team</a>
+                        <a href="#products" onClick={toggleMenu}>Products</a>
                     </li>
                     <li>
                         
-                        <a href="/#contact">Contact</a>
+                        <a href="#team" onClick={toggleMenu}>Team</a>
+                    </li>
+                    <li>
+                        
+                        <a href="/#contact" onClick={toggleMenu}>Contact</a>
                     </li>
                 </ul>
             </div>
