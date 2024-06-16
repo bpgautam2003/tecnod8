@@ -14,10 +14,10 @@ function App() {
     <>
     <Navbar/>
     <Home/>
-    {/* <Deliverables/>
-    <Products/> */}
-    {/* <Benefits />
-    <Contact/>*/}
+    <Deliverables/>
+    <Products/> 
+    <Benefits />
+    <Contact/>
     <Team/> 
     <Partners/>
     <Footer/>
