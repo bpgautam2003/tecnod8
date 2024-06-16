@@ -2,6 +2,7 @@ import './App.css';
 import Benefits from './components/Benefits';
 import Contact from './components/Contact';
 import Deliverables from './components/Deliverables';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Partners from './components/Partners';
@@ -13,12 +14,13 @@ function App() {
     <>
     <Navbar/>
     <Home/>
-    <Deliverables/>
-    <Products/>
-    <Benefits />
-    <Contact/>
-    <Team/>
+    {/* <Deliverables/>
+    <Products/> */}
+    {/* <Benefits />
+    <Contact/>*/}
+    <Team/> 
     <Partners/>
+    <Footer/>
     </>
   );
 }
