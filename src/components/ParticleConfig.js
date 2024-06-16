@@ -40,10 +40,10 @@ const ParticlesComponent = () => {
             },
             particles: {
                 color: {
-                    value: "#fff",
+                    value: "#d3ffca",
                 },
                 links: {
-                    color: "#fff",
+                    color: "#d3ffca",
                     distance: 150,
                     enable: true,
                     opacity: 0.3,
@@ -66,7 +66,7 @@ const ParticlesComponent = () => {
                     value: 150,
                 },
                 opacity: {
-                    value: 0.8,
+                    value: 0.4,
                 },
                 shape: {
                     type: "circle",
