@@ -647,6 +647,10 @@
     height: 25vh;
   }
 
+    .team .card-element {
+      cursor: auto;
+    }
+
 }
 
 
