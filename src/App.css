@@ -392,6 +392,8 @@
     padding: 1rem;
     transition: transform 0.3s;
     cursor: pointer;
+    min-width: 90%;
+
     
   }
 
