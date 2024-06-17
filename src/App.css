@@ -553,7 +553,7 @@
   position: relative;
   overflow: hidden;
   width: 28%;
-  min-width: 280px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
 }
