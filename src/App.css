@@ -405,7 +405,7 @@
 
 /* Benefits Css */
 
-.benefits{
+.benefits {
   /* background-color: var(--bg); */
   padding-top: 1.8rem;
 }
@@ -417,24 +417,25 @@
   border-radius: 10px;
 }
 
-.benefits .card-element{
+.benefits .card-element {
   padding-bottom: 0;
 }
 
 
 
 .benefit-name p {
-color: white;
+  color: white;
   font-size: 14px;
   font-family: var(--text-font);
 }
+
 .benefit-name:hover {
   background-color: var(--main);
   transform: scale(1.05);
   transition: all ease-in 0.3s;
 }
 
-.benefit-name:hover.benefit-name p{
+.benefit-name:hover.benefit-name p {
   color: var(--bg);
 }
 
@@ -447,67 +448,67 @@ color: white;
 
 /* Contact CSS */
 
-.contact h1 {
-  margin-bottom: 0;
+.contact {
+  padding-top: 2rem;
+  background-color: var(--bg);
 }
 
 .contact-card {
-  margin: auto;
+  margin: 1rem auto;
   display: flex;
   width: 50%;
   flex-direction: column;
-  row-gap: 1rem;
+  row-gap: 1.5rem;
 }
 
+.contact-card textarea,
 .contact-card input {
   width: 100%;
-  display: inline-block;
   border: none;
   border-radius: 10px;
   height: 30vh;
   padding: 10px;
-  overflow-y: scroll;
-  background-color: var(--black);
-  border: 1px solid var(--main);
+  background-color: var(--bg);
+  border: 1px solid var(--gray);
   color: white;
 }
 
 .contact-info {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .contact-info input {
-  max-width: 50%;
-  height: 10vh;
-
+  width: 50%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-card button {
   background-color: var(--main);
   border: none;
-  height: 10vh;
+  height: 8vh;
   border-radius: 10px;
   cursor: pointer;
-  font-size: large;
+  color: var(--bg);
+  font-size: 20px;
+  font-family: var(--text-font);
   font-weight: 600;
 }
 
-@media (max-width : 767px) {
+@media (max-width : 768px) {
   .contact-card {
     width: 80%;
   }
 }
 
 @media (max-width : 570px) {
-  .contact h1 {
-    font-size: 2.4rem;
 
-  }
 
   .contact-card {
     width: 100%;
-    padding: 0;
+    /* padding: 0; */
   }
 
   .contact-card input {
