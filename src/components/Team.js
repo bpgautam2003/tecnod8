@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import ad1 from '../images/ad1.png'
 import ad2 from '../images/ad2.png'
 import ad3 from '../images/ad3.png'
@@ -9,12 +9,18 @@ import f4 from '../images/f4.png'
 import f5 from '../images/f5.png'
 import f6 from '../images/f6.png'
 
+import Aos from 'aos'
+import 'aos/dist/aos.css';
+
 const Team = () => {
+    useEffect(() => {
+        Aos.init();
+    }, [])
     return (
         <section id='team' className='team'>
             <h1>Advisors</h1>
             <div className='cards-container'>
-                <div className="card-element">
+                <div className="card-element" data-aos="fade-up" data-aos-duration="1500">
                     <div className='card-img'><img src={ad1} alt='person' /></div>
                     <h3>Dr. Satvasheel Powar</h3>
                     <p>Startup Advisor</p>
@@ -33,7 +39,7 @@ const Team = () => {
                         </a>
                     </div>
                 </div>
-                <div className="card-element">
+                <div className="card-element" data-aos="fade-up" data-aos-duration="1500">
                     <div className='card-img'><img src={ad2} alt='person' /></div>
                     <h3>Air Vice Marshal
                         PKH Sinha VSM (retd)
@@ -50,7 +56,7 @@ const Team = () => {
                         </a>
                     </div>
                 </div>
-                <div className="card-element">
+                <div className="card-element" data-aos="fade-up" data-aos-duration="1500">
                     <div className='card-img'><img src={ad3} alt='person' /></div>
                     <h3>Dr Aditya Nigam</h3>
                     <p>Artificial Intelligence Advisor</p>
@@ -68,7 +74,7 @@ const Team = () => {
             </div>
             <h1>Founding Team</h1>
             <div className='cards-container'>
-                <div className="card-element">
+                <div className="card-element" data-aos="fade-up" data-aos-duration="1500">
                     <div className='card-img'><img src={f1} alt='person' /></div>
                     <h3>Ravinder Kumar</h3>
                     <p>Founder & CEO</p>
@@ -85,7 +91,7 @@ const Team = () => {
                         </a>
                     </div>
                 </div>
-                <div className="card-element">
+                <div className="card-element" data-aos="fade-up" data-aos-duration="1500">
                     <div className='card-img'><img src={f2} alt='person' /></div>
                     <h3>Akshar Singh
                     </h3>
@@ -100,7 +106,7 @@ const Team = () => {
                         </a>
                     </div>
                 </div>
-                <div className="card-element">
+                <div className="card-element" data-aos="fade-up" data-aos-duration="1500">
                     <div className='card-img'><img src={f3} alt='person' /></div>
                     <h3>Naresh R</h3>
                     <p>LLM Lead</p>
@@ -114,7 +120,7 @@ const Team = () => {
                         </a>
                     </div>
                 </div>
-                <div className="card-element">
+                <div className="card-element" data-aos="fade-up" data-aos-duration="1500">
                     <div className='card-img'><img src={f4} alt='person' /></div>
                     <h3>Niyati Madaan</h3>
                     <p>Product Development</p>
@@ -130,7 +136,7 @@ const Team = () => {
                         </a>
                     </div>
                 </div>
-                <div className="card-element">
+                <div className="card-element" data-aos="fade-up" data-aos-duration="1500">
                     <div className='card-img'><img src={f5} alt='person' /></div>
                     <h3>Harmanpreet Singh
                     </h3>
@@ -145,7 +151,7 @@ const Team = () => {
                         </a>
                     </div>
                 </div>
-                <div className="card-element">
+                <div className="card-element" data-aos="fade-up" data-aos-duration="1500">
                     <div className='card-img'><img src={f6} alt='person' /></div>
                     <h3>Arpit Rathore</h3>
                     <p>GenAI Developer </p>

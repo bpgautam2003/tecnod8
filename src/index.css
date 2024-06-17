@@ -1,8 +1,8 @@
 :root{
   --black : black;
   --blackk : rgba(0, 0, 0, 0.39);
-  --main : #a1f88f;
-  /* --main: #d3ffca; */
+  /* --main : #a1f88f; */
+  --main: #d3ffca;
   --gray : rgba(255, 255, 255, 0.2);
   /* --gray : rgb(211, 255, 202, 0.3); */
   --bg : #0f0e0e;
@@ -17,7 +17,9 @@
 }
 html {
   scroll-behavior: smooth;
+  scrollbar-color: var(--main) var(--bg);
 }
+
 
 *{
   margin: 0;

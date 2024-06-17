@@ -1,11 +1,16 @@
-import React from 'react'
+import React , {useEffect} from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 const Benefits = () => {
+    useEffect(() => {
+        Aos.init();
+    }, [])
     return (
         <section id="benefits" className='benefits'>
             <h1>Benefits</h1>
             <div className='cards-container'>
-                <div className="card-element">
+                <div className="card-element" data-aos="zoom-in-down" data-aos-duration="1500">
 
                     <div className='benefit-name'>
                         <p>Interactive Hard-tech learning</p>
@@ -36,7 +41,7 @@ const Benefits = () => {
                     </h3>
 
                 </div>
-                <div className="card-element">
+                <div className="card-element" data-aos="zoom-in-down" data-aos-duration="1500">
 
                     <div className='benefit-name'>
                         <p>Performance Optimization</p>
@@ -67,7 +72,7 @@ const Benefits = () => {
                     </h3>
 
                 </div>
-                <div className="card-element">
+                <div className="card-element" data-aos="zoom-in-down" data-aos-duration="1500">
 
                     <div className='benefit-name'>
                         <p>Efficiency Enhancement</p>
