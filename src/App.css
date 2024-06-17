@@ -343,7 +343,6 @@
     .partners h1 {
       margin-bottom: 0;
     font-size: 2.4rem;
-    /* margin: 4rem 0 0 0; */
     font-family: var(--text-font);
     font-weight: 400;
   }
@@ -356,13 +355,6 @@
     padding: 2rem 0;
   }
 
-  /* .card-element {
-    padding: 1rem;
-    transition: transform 0.3s;
-    cursor: pointer;
-    /* width: 48%; */
-  
-
 }
 
 @media (max-width : 500px) {
@@ -374,7 +366,6 @@
     .team h1,
     .partners h1 {
     font-size: 1.6rem;
-    /* margin: 2.8rem 0 0 0; */
     font-family: var(--text-font);
     font-weight: 400;
   }
@@ -392,9 +383,6 @@
     padding: 1rem;
     transition: transform 0.3s;
     cursor: pointer;
-    min-width: 90%;
-
-    
   }
 
 }
