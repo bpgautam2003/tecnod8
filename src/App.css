@@ -382,8 +382,22 @@
     padding: 1rem;
     transition: transform 0.3s;
     cursor: pointer;
+    
   }
 
+}
+
+@media (max-width : 680px){
+  .card-element {
+    width: 320px;
+  }
+}
+
+
+@media (max-width : 375px) {
+  .card-element {
+    width: 275px;
+  }
 }
 
 
@@ -705,7 +719,7 @@
 .certificate-card-element{
   position: relative;
   width: 22%;
-  min-width: 300px;
+  min-width: 280px;
   background-color: var(--main);
   border-radius: 10px;
 
@@ -723,6 +737,18 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+@media (max-width : 650px){
+  .certificate-card-element{
+    width: 320px;
+  }
+}
+
+@media (max-width : 375px){
+  .certificate-card-element{
+    width: 280px;
+  }
 }
 
 
