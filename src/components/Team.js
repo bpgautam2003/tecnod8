@@ -114,9 +114,6 @@ const Team = () => {
                         </a>
                     </div>
                 </div>
-
-            </div>
-            <div className='cards-container'>
                 <div className="card-element">
                     <div className='card-img'><img src={f4} alt='person' /></div>
                     <h3>Niyati Madaan</h3>
@@ -164,6 +161,7 @@ const Team = () => {
                 </div>
 
             </div>
+            
 
         </section>
     )

@@ -4,7 +4,8 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: var(--black);
+  background-color: var(--bg);
+  
   z-index: 99;
   position: fixed;
   width: 100%;
@@ -39,7 +40,7 @@
 
 .nav-list a:hover {
   color: var(--main);
-  border-bottom: 1.5px solid var(--main);
+  border-bottom: 2px solid var(--main);
 }
 
 .menu-icon {
@@ -77,15 +78,28 @@
   .nav-responsive {
     display: flex;
     flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1rem;
     position: absolute;
     top: 4rem;
     right: 0;
     width: 100%;
-    height: calc(100vh - 4rem);
     background-color: black;
-    border-top: 1px solid var(--gray);
+    border-top: 1px solid var(--main);
+    transform: translateY(100%);
+    animation: slideMenu 0.3s ease forwards;
 
   }
+
+    @keyframes slideMenu {
+      0% {
+        transform: translateY(-100%);
+      }
+  
+      100% {
+        transform: translateY(0);
+      }
+    }
 
   .menu-icon {
     display: flex;
@@ -134,9 +148,10 @@
   height: 2.4rem;
   max-width: 8rem;
   padding: 5px 15px;
-  color: var(--main);
-  background: transparent;
-  border: 1px solid var(--main);
+  color: white;
+  /* background: transparent; */
+  background-color: var(--bg);
+  border: 1px solid var(--gray);
   border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
@@ -249,7 +264,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  align-items: center;
+  /* min-height: 100vh; */
 }
 
 .deliverables h1,
@@ -259,52 +275,51 @@
 .team h1,
 .partners h1 {
   color: var(--main);
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin: auto;
-  margin-top: 3.2rem;
+  margin-top: 3rem;
   font-family: var(--text-font);
   font-weight: 400;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .cards-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
   flex-flow: wrap;
   row-gap: 2rem;
-  padding: 2rem 0;
 }
 
 .card-element {
-  /* background: transparent; */
   background-color: var(--bg);
   border: 1px solid var(--gray);
   border-radius: 10px;
-  padding: 2rem;
+  padding: 1rem;
   transition: transform 0.3s;
   cursor: pointer;
-  width: 32%;
+  width: 28%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-/* .card-element:hover {
-  transform: translateY(-5%);
-} */
-
-/* .card-img{
-  padding: 1rem;
-  border: 1px solid var(--gray);
-  border-radius: 10px;
-} */
 .card-img img {
-  width: 100%;
+  width: 90%;
+  display: flex;
   border-radius: 10px;
+  margin: auto;
 }
 
 .card-element h3 {
   font-family: var(--text-font);
   font-weight: 400;
   color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 15px 0;
 }
 
@@ -317,7 +332,7 @@
 
   .deliverables,
   .products {
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem 0 1.5rem;
   }
 
   .deliverables h1,
@@ -326,6 +341,7 @@
     .contact h1,
     .team h1,
     .partners h1 {
+      margin-bottom: 0;
     font-size: 2.4rem;
     /* margin: 4rem 0 0 0; */
     font-family: var(--text-font);
@@ -340,12 +356,12 @@
     padding: 2rem 0;
   }
 
-  .card-element {
+  /* .card-element {
     padding: 1rem;
     transition: transform 0.3s;
     cursor: pointer;
-    width: 48%;
-  }
+    /* width: 48%; */
+  
 
 }
 
@@ -369,14 +385,14 @@
     flex-flow: wrap;
     justify-content: center;
     row-gap: 2rem;
-    padding: 2rem 0;
+    padding: 1.8rem 0;
   }
 
   .card-element {
     padding: 1rem;
     transition: transform 0.3s;
     cursor: pointer;
-    width: 98%;
+    width: 80%;
   }
 
 }
@@ -538,21 +554,23 @@
   justify-content: center;
   gap: 2rem;
   flex-flow: wrap;
+  row-gap: 2rem;
 
 }
 
 .team .card-element {
+  
   position: relative;
   overflow: hidden;
   width: 28%;
-  min-width: 290px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
 }
 
 .team .card-element img {
-  width: 75%;
-  height: 35vh;
+  width: 100%;
+  height: 30vh;
   margin: auto;
   border-radius: 10px;
   display: block;
@@ -587,6 +605,7 @@
 
 .team .card-content h2 {
   font-size: 24px;
+  text-align: left;
 }
 
 .team .card-content h3 {
