@@ -15,7 +15,10 @@ const Navbar = () => {
     return (
         <div className="nav">
             <div className="nav-container">
+                <div className='heading-container'>
                 <img src={logo} alt="logo" />
+                    <h1 className='heading'>Tecnod8<span>.ai</span></h1>
+                </div>
                 <div className="menu-icon" onClick={toggleMenu}>
                     {menuOpen ? <IoClose size={35} color="white" style={{ margin: 'auto' }} /> : <IoMenu size={35} color="white" style={{margin : 'auto'}}/>}
                 </div>
