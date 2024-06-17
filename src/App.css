@@ -5,7 +5,7 @@
   align-items: center;
   padding: 10px;
   background-color: var(--bg);
-  
+
   z-index: 99;
   position: fixed;
   width: 100%;
@@ -91,15 +91,15 @@
 
   }
 
-    @keyframes slideMenu {
-      0% {
-        transform: translateY(-100%);
-      }
-  
-      100% {
-        transform: translateY(0);
-      }
+  @keyframes slideMenu {
+    0% {
+      transform: translateY(-100%);
     }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
 
   .menu-icon {
     display: flex;
@@ -318,7 +318,7 @@
 .card-element h3 {
   font-family: var(--text-font);
   font-weight: 400;
-  color: white;
+  color: var(--main);
   font-size: 1.8rem;
   margin: 15px 0;
 }
@@ -329,6 +329,7 @@
 }
 
 @media (max-width : 768px) {
+
   .deliverables,
   .products {
     padding: 2rem 1.5rem 0 1.5rem;
@@ -336,11 +337,11 @@
 
   .deliverables h1,
   .products h1,
-    .benefits h1,
-    .contact h1,
-    .team h1,
-    .partners h1 {
-      margin-bottom: 0;
+  .benefits h1,
+  .contact h1,
+  .team h1,
+  .partners h1 {
+    margin-bottom: 0;
     font-size: 2.4rem;
     font-family: var(--text-font);
     font-weight: 400;
@@ -361,9 +362,9 @@
   .deliverables h1,
   .products h1,
   .benefits h1,
-    .contact h1,
-    .team h1,
-    .partners h1 {
+  .contact h1,
+  .team h1,
+  .partners h1 {
     font-size: 1.6rem;
     font-family: var(--text-font);
     font-weight: 400;
@@ -382,12 +383,12 @@
     padding: 1rem;
     transition: transform 0.3s;
     cursor: pointer;
-    
+
   }
 
 }
 
-@media (max-width : 680px){
+@media (max-width : 680px) {
   .card-element {
     width: 320px;
   }
@@ -404,18 +405,9 @@
 
 /* Benefits Css */
 
-
-.benefits .card-element {
-  padding: 1rem;
-}
-
-.card-benefits {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid var(--gray);
-  border-radius: 10px;
-  padding: 1rem;
+.benefits{
+  /* background-color: var(--bg); */
+  padding-top: 1.8rem;
 }
 
 .benefit-name {
@@ -423,54 +415,32 @@
   border: 1px solid var(--gray);
   width: 100%;
   border-radius: 10px;
-
 }
+
+.benefits .card-element{
+  padding-bottom: 0;
+}
+
+
 
 .benefit-name p {
-  color: var(--main);
+color: white;
   font-size: 14px;
+  font-family: var(--text-font);
+}
+.benefit-name:hover {
+  background-color: var(--main);
+  transform: scale(1.05);
+  transition: all ease-in 0.3s;
 }
 
-.card-benefits span {
+.benefit-name:hover.benefit-name p{
+  color: var(--bg);
+}
+
+.benefits .card-element span {
   color: white;
 
-}
-
-.benefits {
-  position: relative;
-  overflow: hidden;
-}
-
-.benefits .cards-container1 {
-  display: flex;
-  gap: 2rem;
-}
-
-.benefits-container .card-element {
-  padding: 1rem;
-  transition: transform 0.3s;
-  cursor: pointer;
-  width: 400px;
-
-}
-
-.benefits-container {
-  display: flex;
-  gap: 2rem;
-  animation: scroll 20s linear infinite;
-  background-color: var(--bg);
-  padding: 1rem 0;
-}
-
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
 }
 
 
@@ -565,7 +535,7 @@
 }
 
 .team .card-element {
-  
+
   position: relative;
   overflow: hidden;
   width: 28%;
@@ -647,15 +617,13 @@
   padding: 1rem;
 }
 
-@media (max-width : 500px){
+@media (max-width : 500px) {
 
   .team .card-element img {
-      height: 25vh;      
-    }
+    height: 25vh;
+  }
 
 }
-
-
 
 
 /* Partener CSS */
@@ -683,8 +651,8 @@
   background-color: var(--bg);
 }
 
-@media (max-width : 767px){
-  .partner-logos{
+@media (max-width : 767px) {
+  .partner-logos {
     animation: scroll 5s linear infinite;
   }
 
@@ -706,7 +674,7 @@
   }
 }
 
-.certificate-cards-container{
+.certificate-cards-container {
   padding: 2rem 0;
   position: relative;
   display: flex;
@@ -714,7 +682,8 @@
   gap: 1.5rem;
   flex-flow: wrap;
 }
-.certificate-card-element{
+
+.certificate-card-element {
   position: relative;
   width: 22%;
   min-width: 280px;
@@ -723,28 +692,28 @@
 
 }
 
-.certificate-card-element img{
+.certificate-card-element img {
   width: 100%;
   height: 35vh;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
-.certificate-body{
+.certificate-body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-@media (max-width : 650px){
-  .certificate-card-element{
+@media (max-width : 650px) {
+  .certificate-card-element {
     width: 320px;
   }
 }
 
-@media (max-width : 375px){
-  .certificate-card-element{
+@media (max-width : 375px) {
+  .certificate-card-element {
     width: 280px;
   }
 }
@@ -754,7 +723,7 @@
 /* Footer CSS */
 
 
-.footer{
+.footer {
   width: 100%;
   position: relative;
   background-color: var(--bg);
@@ -762,51 +731,52 @@
   border-top: 1px solid var(--gray);
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-content{
+.footer-content {
   color: white;
 }
 
-.footer-content span{
+.footer-content span {
   color: var(--main);
   font-size: 20px;
 }
+
 .footer-content p {
   font-size: 16px;
   line-height: 1.6rem;
 }
 
-.social-links{
+.social-links {
   display: flex;
   gap: 1rem;
   padding: 0 2rem;
 }
 
-.social-links img{
+.social-links img {
   width: 50px;
 }
 
-@media (max-width : 767px){
-  .footer-container{
+@media (max-width : 767px) {
+  .footer-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .footer-content{
+  .footer-content {
     text-align: center;
   }
 
-  .footer{
+  .footer {
     padding: 2rem;
   }
 
-    .social-links {
-      padding: 1rem 0;
-      gap: 10px;
+  .social-links {
+    padding: 1rem 0;
+    gap: 10px;
 
-    }
+  }
 }
