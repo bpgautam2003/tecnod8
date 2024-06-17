@@ -650,9 +650,7 @@
 @media (max-width : 500px){
 
   .team .card-element img {
-      width: 170px;
-      height: 30vh;
-      
+      height: 25vh;      
     }
 
 }
